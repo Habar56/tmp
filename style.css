@@ -1,0 +1,115 @@
+/* Плавная прокрутка по ссылкам из меню */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Вся страница */
+body {
+  margin: 0;                      /* убираем белую рамку */
+  font-family: Arial, sans-serif; /* шрифт */
+  font-size: 18px;                /* размер текста */
+  line-height: 1.5;               /* расстояние между строками */
+  color: black;                   /* чёрный текст */
+  background: floralwhite;        /* светло-бежевый фон */
+}
+
+/* Шапка */
+header {
+  position: sticky;               /* не уезжает при прокрутке */
+  top: 0;
+  display: flex;                  /* название и меню в одну строку */
+  justify-content: space-between; /* название слева, меню справа */
+  padding: 15px 40px;             /* отступы внутри */
+  background: saddlebrown;        /* коричневый фон */
+  color: white;                   /* белый текст */
+}
+
+/* Ссылки меню */
+nav a {
+  margin-left: 20px;              /* расстояние между пунктами */
+  color: wheat;                   /* бежевые ссылки */
+  text-decoration: none;          /* без подчёркивания */
+}
+
+/* Все разделы */
+section {
+  padding: 50px 40px;             /* отступы внутри раздела */
+  scroll-margin-top: 50px;        /* шапка не закрывает заголовок */
+}
+
+/* Разделы с бежевым фоном */
+.light {
+  background: wheat;
+}
+
+/* Первый экран с фото на фоне */
+.hero {
+  padding: 120px 40px;            /* высокий блок */
+  text-align: center;             /* всё по центру */
+  color: white;
+  background: url("doska.jpg");   /* картинка на фоне */
+  background-size: cover;         /* растянуть на весь блок */
+  text-shadow: 0 0 10px black;    /* тень, чтобы текст читался на фото */
+}
+
+.hero h1 {
+  font-size: 44px;
+}
+
+/* Кнопка */
+.button {
+  display: inline-block;          /* чтобы отступы кнопки работали */
+  padding: 15px 30px;             /* размер кнопки */
+  background: darkolivegreen;     /* зелёный */
+  color: white;
+  border-radius: 8px;             /* скруглённые углы */
+  text-decoration: none;          /* без подчёркивания */
+  text-shadow: none;              /* у кнопки тень не нужна */
+}
+
+/* Карточки товаров в ряд */
+.cards {
+  display: flex;                  /* в ряд */
+  gap: 20px;                      /* расстояние между карточками */
+}
+
+/* Одна карточка */
+.card {
+  flex: 1;                        /* одинаковая ширина */
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+}
+
+/* Картинка в карточке */
+.card img {
+  width: 100%;                    /* по ширине карточки */
+  border-radius: 8px;
+}
+
+/* Заглушка вместо картинки */
+.no-photo {
+  padding: 80px 0;                /* высота блока */
+  text-align: center;
+  background: tan;
+  border-radius: 8px;
+}
+
+/* Цена */
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  color: darkolivegreen;          /* зелёная */
+}
+
+/* Подвал */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: saddlebrown;
+  color: white;
+}
+
+footer a {
+  color: white;
+}
